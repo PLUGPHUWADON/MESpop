@@ -1,7 +1,7 @@
 let total = 0;
 
 function on(){
-    let ll = new Audio('LL.mp3');
+    let ll = new Audio('R.mp3');
     ll.play();
     document.getElementById("img1").style.zIndex = "-1";
 }
