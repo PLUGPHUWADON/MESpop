@@ -2,8 +2,8 @@ let total = 0;
 
 function on(){
     let ll = new Audio('LL.mp3');
-    document.getElementById("img1").style.zIndex = "-1";
     ll.play();
+    document.getElementById("img1").style.zIndex = "-1";
 }
 
 function up(){
