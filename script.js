@@ -1,4 +1,8 @@
-let total = 0;
+let total = parseInt(localStorage.getItem("key"));
+if (isNaN(total)) {
+    total = 0;
+}
+document.getElementById("count").innerHTML = total;
 
 function on(){
     let ll = new Audio('wib.mp3');
@@ -22,5 +26,6 @@ touch.addEventListener('touchend',function() {
 
 function count(x) {
     total += x;
-    document.getElementById("count").innerHTML = total;
+    localStorage.setItem("key",total);
+    document.getElementById("count").innerHTML = localStorage.getItem("key");
 }
